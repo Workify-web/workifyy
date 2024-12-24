@@ -1,0 +1,9 @@
+node_modules
+# Ignore environment variable files
+.env
+# Ignore config.env if it was used before
+/server/config.env
+# Ignore environment files for frontend
+/Client/.env.development
+/Client/.env.production
+

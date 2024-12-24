@@ -1,0 +1,22 @@
+{
+  "name": "workifyy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "format:client": "prettier --write 'Client/src/**/*.{js,jsx,ts,tsx}'",
+    "format:server": "prettier --write 'server/**/*.{js,jsx}'",
+    "format": "npm run format:client && npm run format:server",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "lint": "eslint . --ext js,jsx,ts,tsx"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6"
+  },
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
